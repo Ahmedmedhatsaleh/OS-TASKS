@@ -74,6 +74,7 @@ array<unsigned char, 8> buildSaltedBlock(uint16_t salt) // Build initial block u
     }
 
     return block;                
+} // <-- this brace was missing
 
 string encryptPasswordMT16(const string &password, uint16_t salt) 
 {
